@@ -31,7 +31,7 @@ function App() {
       <main className='bg-white px-10 md:px-20 lg:px-40 dark:bg-gray-900'>
         <section className='bg-white min-h-screen dark:bg-gray-900'>
           <nav className='py-10 mb-12 flex justify justify-between'>
-            <h1 className='text-3xl font-burtons'>[Blank]</h1>
+            {/*<h1 className='text-3xl font-burtons'>[Blank]</h1>*/}
             <ul className='flex items-center'>
               <li>
                 <BsFillMoonStarsFill onClick={() => setDarkMode(!darkMode)} className='cursor-pointer text-2xl hover:px-1' />
