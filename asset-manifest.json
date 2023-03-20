@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/static/css/main.74bc2ae5.css",
+    "main.js": "/static/js/main.b8c1be21.js",
+    "static/js/787.128fc6e9.chunk.js": "/static/js/787.128fc6e9.chunk.js",
+    "static/media/web3.png": "/static/media/web3.474d2f62046d80c610d2.png",
+    "static/media/web4.png": "/static/media/web4.2904c3034a49de55a9b1.png",
+    "static/media/pigdicegame.jpg": "/static/media/pigdicegame.c81915a8df2a9effdaf3.jpg",
+    "static/media/tom.jpg": "/static/media/tom.a7ea8770533d513267df.jpg",
+    "static/media/dota.jpg": "/static/media/dota.9ccc32b11b6ae05aa6a7.jpg",
+    "static/media/logo.svg": "/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/index.html",
+    "main.74bc2ae5.css.map": "/static/css/main.74bc2ae5.css.map",
+    "main.b8c1be21.js.map": "/static/js/main.b8c1be21.js.map",
+    "787.128fc6e9.chunk.js.map": "/static/js/787.128fc6e9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.74bc2ae5.css",
+    "static/js/main.b8c1be21.js"
+  ]
+}
