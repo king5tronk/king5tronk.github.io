@@ -5,6 +5,7 @@ import web1 from './images/dota.jpg';
 import web2 from './images/pigdicegame.jpg';
 import web3 from './images/web3.png';
 import web4 from './images/web4.png';
+import arrowup from './images/arrowup.png';
 import { useState } from 'react';
 import { useRef } from 'react';
 import { BsAlignCenter, BsFillMoonStarsFill } from 'react-icons/bs';
@@ -20,6 +21,13 @@ function App() {
   const scrollToSection = (elementRef) => {
     window.scrollTo({
       top: elementRef.current.offsetTop,
+      behavior: 'smooth'
+    })
+  }
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
       behavior: 'smooth'
     })
   }
@@ -152,16 +160,16 @@ function App() {
           </div>
           <div className='screenshot-wrapper'>
             <a href='https://github.com/king5tronk/dota'target={'_blank'} className='screenshot'>
-              <img src={web1} className='rounded-lg object-cover' width={'100%'} height={'100%'} />
+              <img alt='' src={web1} className='rounded-lg object-cover' width={'100%'} height={'100%'} />
             </a>
             <a href='https://github.com/king5tronk/PigDiceGame'target={'_blank'} className='screenshot'>
-              <img src={web2} className='rounded-lg object-cover' width={'100%'} height={'100%'} />
+              <img alt='' src={web2} className='rounded-lg object-cover' width={'100%'} height={'100%'} />
             </a>
             <div className='screenshot'>
-              <img src={web3} className='rounded-lg object-cover' width={'100%'} height={'100%'} />
+              <img alt='' src={web3} className='rounded-lg object-cover' width={'100%'} height={'100%'} />
             </div>
             <div className='screenshot'>
-              <img src={web4} className='rounded-lg object-cover' width={'100%'} height={'100%'} />
+              <img alt='' src={web4} className='rounded-lg object-cover' width={'100%'} height={'100%'} />
             </div>
           </div>
         </section>
@@ -182,6 +190,7 @@ function App() {
         </div>
 
       </main>
+      <button className='sticky-button-up' onClick={scrollToTop}><img src={arrowup} alt="" width={36} height={36} /></button>
     </div>
   );
 }
