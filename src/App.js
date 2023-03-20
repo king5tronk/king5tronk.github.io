@@ -166,7 +166,7 @@ function App() {
           </div>
         </section>
         <section>
-          <div className='text-center text-align:center'>
+          <div className=' text-center text-align:center'>
             <h3 ref={contact} className='text-3xl py-1 pt-7'>Contact</h3>
             <p className='py-5 leading-8 text-gray-600'>Tom Quanz, mobile: 0738030005</p>
             <div className='map-wrapper'><iframe className='map' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2032.4153747614055!2d17.934308616156052!3d59.376095614313954!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465f9e69422a7bbf%3A0xaf95795381ce152e!2sRidv%C3%A4gen%2015%2C%20174%2057%20Sundbyberg!5e0!3m2!1ssv!2sse!4v1679262743367!5m2!1ssv!2sse"
