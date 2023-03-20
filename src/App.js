@@ -42,7 +42,7 @@ function App() {
             <h1 className='text-3xl font-burtons'></h1>
             <ul className='flex items-center'>
               <li>
-                <BsFillMoonStarsFill onClick={() => setDarkMode(!darkMode)} className='cursor-pointer text-2xl hover:px-1' />
+                <BsFillMoonStarsFill onClick={() => setDarkMode(!darkMode)} className='cursor-pointer text-2xl hover:px-1 dark:text-white' />
               </li>
               <li><a onClick={() => scrollToSection(portfolio)} className='bg-gradient-to-r from-fuchsia-600 to bg-violet-700 text-white px-4 py-2 rounded-md ml-8 hover:px-5' href="#"
               >
@@ -64,9 +64,9 @@ function App() {
             </ul>
           </nav>
           <div className='text-center p-10'>
-            <h2 className='py-2 text-black '>TOM QUANZ</h2>
-            <h3 className='text-2xl py-2'>Devolper and designer.</h3>
-            <p className='text-md py-5 leading-8'>
+            <h2 className='py-2 text-black dark:text-white '>TOM QUANZ</h2>
+            <h3 className='text-2xl py-2 dark:text-white'>Devolper and designer.</h3>
+            <p className='text-md py-5 leading-8 dark:text-white'>
               Student learning programming lorem ipsum lorem ipsum blablabla...
             </p>
           </div>
@@ -89,8 +89,8 @@ function App() {
 
         <section>
           <div className='text-center pt-8'>
-            <h3 ref={services} className='text-3xl py-1 te'>Services i offer</h3>
-            <p className='text-md leading-8 text-gray-600'>
+            <h3 ref={services} className='text-3xl py-1 te dark:text-white'>Services i offer</h3>
+            <p className='text-md leading-8 text-gray-600 dark:text-white'>
               Since the beginning of my journey as a devoloper...
             </p>
           </div>
@@ -153,8 +153,8 @@ function App() {
         </section>
         <section>
           <div className='text-center'>
-            <h3 ref={portfolio} className='text-3xl py-1'>Portfolio</h3>
-            <p className='text-md py-5 leading-8 text-gray-600'>
+            <h3 ref={portfolio} className='text-3xl py-1 dark:text-white'>Portfolio</h3>
+            <p className='text-md py-5 leading-8 text-gray-600 dark:text-white'>
               Since the beginning of my journey as a devoloper...
             </p>
           </div>
@@ -175,8 +175,8 @@ function App() {
         </section>
         <section>
           <div className=' text-center text-align:center'>
-            <h3 ref={contact} className='text-3xl py-1 pt-7'>Contact</h3>
-            <p className='py-5 leading-8 text-gray-600'>Tom Quanz, mobile: 0738030005</p>
+            <h3 ref={contact} className='text-3xl py-1 pt-7 dark:text-white'>Contact</h3>
+            <p className='py-5 leading-8 text-gray-600 dark:text-white'>Tom Quanz, mobile: 0738030005</p>
             <div className='map-wrapper'><iframe className='map' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2032.4153747614055!2d17.934308616156052!3d59.376095614313954!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465f9e69422a7bbf%3A0xaf95795381ce152e!2sRidv%C3%A4gen%2015%2C%20174%2057%20Sundbyberg!5e0!3m2!1ssv!2sse!4v1679262743367!5m2!1ssv!2sse"
               width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
@@ -184,7 +184,7 @@ function App() {
         </section>
         <div className='pt-6'>
           <hr></hr>
-          <p className='text-center py-5 leading-8 text-gray-600'>
+          <p className='text-center py-5 leading-8 text-gray-600 dark:text-white'>
             Copyright &copy; 2023 - Tom Quanz - Tomquanz@hotmail.com
           </p>
         </div>
