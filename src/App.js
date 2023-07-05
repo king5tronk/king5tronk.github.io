@@ -12,11 +12,20 @@ import { BsAlignCenter, BsFillMoonStarsFill } from 'react-icons/bs';
 import { BsFacebook, BsGithub, BsYoutube } from 'react-icons/bs'; //kanske ändra till icons/ai
 import { Player, Controls } from '@lottiefiles/react-lottie-player';
 
+
+
+
+
+
+
+
+
 function App() {
   const [darkMode, setDarkMode] = useState(false);
   const portfolio = useRef(null);
   const contact = useRef(null);
   const services = useRef(null);
+
 
   const scrollToSection = (elementRef) => {
     window.scrollTo({
@@ -33,7 +42,8 @@ function App() {
   }
   return (
     <div className={darkMode ? 'dark' : ''}>
-      
+
+  
 
       {/* next time use <Head><Body><header><footer> etc.. */}
       <main className='bg-white px-10 md:px-20 lg:px-40 dark:bg-gray-900'>
@@ -41,6 +51,7 @@ function App() {
           <nav className='py-10 mb-12 flex justify justify-between'>
             <h1 className='text-3xl font-burtons'></h1>
             <ul className='flex items-center'>
+          
               <li>
                 <BsFillMoonStarsFill onClick={() => setDarkMode(!darkMode)} className='cursor-pointer text-2xl hover:px-1 dark:text-white' />
               </li>
@@ -64,14 +75,14 @@ function App() {
             </ul>
           </nav>
           <div className='text-center p-10'>
-            <h2 className='py-2 text-black dark:text-white '>TOM QUANZ</h2>
+            <h2 className='py-2 text-black dark:text-white '>TOM ERIKSSON</h2>
             <h3 className='text-2xl py-2 dark:text-white'>Devolper and designer.</h3>
             <p className='text-md py-5 leading-8 dark:text-white'>
               Student learning programming lorem ipsum lorem ipsum blablabla...
             </p>
           </div>
           <div className='text-5xl flex justify-center gap-16 py-3 text-gray-600'>
-            <a href='https://www.facebook.com/tomquanz/' target={'_blank'}>
+            <a href='https://www.facebook.com/tomeriksson93/' target={'_blank'}>
               <BsFacebook className='hover:px-1' />
             </a>
             <a href='https://github.com/king5tronk' target={'_blank'}>
@@ -159,15 +170,15 @@ function App() {
             </p>
           </div>
           <div className='screenshot-wrapper'>
-            <a href='https://github.com/king5tronk/dota'target={'_blank'} className='screenshot'>
+            <a href='https://github.com/king5tronk/dota' target={'_blank'} className='screenshot'>
               <img alt='' src={web1} className='rounded-lg object-cover' width={'100%'} height={'100%'} />
             </a>
-            <a href='https://github.com/king5tronk/PigDiceGame'target={'_blank'} className='screenshot'>
+            <a href='https://github.com/king5tronk/PigDiceGame' target={'_blank'} className='screenshot'>
               <img alt='' src={web2} className='rounded-lg object-cover' width={'100%'} height={'100%'} />
             </a>
-            <div className='screenshot'>
+            <a href='newpage' target={'_blank'} className='screenshot'>
               <img alt='' src={web3} className='rounded-lg object-cover' width={'100%'} height={'100%'} />
-            </div>
+            </a>
             <div className='screenshot'>
               <img alt='' src={web4} className='rounded-lg object-cover' width={'100%'} height={'100%'} />
             </div>
@@ -176,7 +187,7 @@ function App() {
         <section>
           <div className=' text-center text-align:center'>
             <h3 ref={contact} className='text-3xl py-1 pt-7 dark:text-white'>Contact</h3>
-            <p className='py-5 leading-8 text-gray-600 dark:text-white'>Tom Quanz, mobile: 0738030005</p>
+            <p className='py-5 leading-8 text-gray-600 dark:text-white'>Tom Eriksson, mobile: 0738030005</p>
             <div className='map-wrapper'><iframe className='map' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2032.4153747614055!2d17.934308616156052!3d59.376095614313954!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465f9e69422a7bbf%3A0xaf95795381ce152e!2sRidv%C3%A4gen%2015%2C%20174%2057%20Sundbyberg!5e0!3m2!1ssv!2sse!4v1679262743367!5m2!1ssv!2sse"
               width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
@@ -185,14 +196,13 @@ function App() {
         <div className='pt-6'>
           <hr></hr>
           <p className='text-center py-5 leading-8 text-gray-600 dark:text-white'>
-            Copyright &copy; 2023 - Tom Quanz - Tomquanz@hotmail.com
+            Copyright &copy; 2023 - Tom Eriksson - Tomeriksson93@hotmail.com
           </p>
         </div>
 
       </main>
-      <button className='sticky-button-up' onClick={scrollToTop}><img src={arrowup} alt="" width={36} height={36} /></button>
+      <button className='sticky-button-up dark:bg-white' onClick={scrollToTop}><img src={arrowup} alt="" width={36} height={36} /></button>
     </div>
   );
 }
-
 export default App;
